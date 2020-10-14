@@ -9,7 +9,7 @@ from vk_api.longpoll import VkLongPoll, VkEventType
 wiki.set_lang("ru")
 session = requests.Session()
 login, password = 'email', 'password' # It's worked if I print here my email and password
-vk_session = vk_api.VkApi(token = '') # Take from bot
+vk_session = vk_api.VkApi(token = '') # Take from VK
 vk_session1 = vk_api.VkApi(login, password)
 try:
     vk_session1.auth(token_only = True)
